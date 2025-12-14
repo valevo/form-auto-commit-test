@@ -1,0 +1,178 @@
+Level: 0
+
+Title: "Zoekhulpen Koloniale Collecties"
+
+Subtitle: "Zoekhulpen bij het doen van herkomstonderzoek naar koloniale collecties"
+
+Content:
+  content: |
+    **Deze zoekhulpen zijn nog in ontwikkeling. Ze worden doorlopend gewijzigd, verplaatst en aangevuld.** 
+    
+    Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij het doen van (herkomst)onderzoek naar koloniale collecties. Ze bevatten informatie over het doen van onderzoek naar objecten die zijn verworven in een koloniale context en nu onderdeel zijn van een Nederlandse museumcollectie. Naast een korte beschrijving van het onderwerp, geven de zoekhulpen specifieke onderzoekstips en wordt er verwezen naar relevant bronmateriaal.
+
+    We zijn benieuwd naar je ervaring als gebruiker van de zoekhulpen. Via deze [vragenlijst](https://forms.office.com/Pages/ResponsePage.aspx?id=yFCH6vTj9U-kP-iCC-CffhqoDmWSdt9Fjwp6_b0ouT9UMDFNOEJBNEJaTzdBTlhUNEJJVjdGT0VKNC4u) kan je suggesties doen voor nieuwe onderwerpen of aanvullende informatie met ons delen.
+
+    _De Zoekhulpen Koloniale Collecties zijn een project van het [Consortium Koloniale Collecties](https://www.colonialcollections.nl/). De zoekhulpen zijn geschreven door onderzoekers van het [Expertisecentrum Restitutie](https://www.niod.nl/onderzoek/expertisecentrum-restitutie) van het NIOD Instituut voor Oorlogs-, Holocaust- en Genocidestudies._
+  content-type: text/markdown
+
+Breakdown:
+  "Herkomstonderzoek naar koloniale collecties":
+    - "Selecteren en afbakenen":
+        link: "niveau1/Dutch/SelecterenEnAfbakenen.yml"
+        rel_type: "see also"
+    - "Onderzoeken":
+        link: "niveau1/Dutch/Onderzoeken.yml"
+        rel_type: "see also"
+    - "Bronnen":
+        link: "niveau1/Dutch/Bronnen.yml"
+        rel_type: "see also"
+    - "Verslagleggen":
+        link: "niveau1/Dutch/SelectAndDelineate.yml"
+        rel_type: "see also"
+  "Categorieën en thema's":
+    - "Musea en collecties":
+        link: "niveau2/Dutch/Museum.yml"
+        rel_type: "see also"
+        Deelonderwerpen:
+          - "Etnografisch Museum Artis":
+              link: "niveau3/Dutch/EMArtis.yml"
+              rel_type: "see also"
+          - "Hoofdcursus Kampen":
+              link: "niveau3/Dutch/HoofdcursusKampen.yml"
+              rel_type: "see also"
+          - "Koninklijk Bataviaasch Genootschap van Kunsten en Wetenschappen":
+              link: "niveau3/Dutch/BGKW.yml"
+              rel_type: "see also"
+          - "Koninklijk Kabinet van Zeldzaamheden":
+              link: "niveau3/Dutch/KKZ.yml"
+              rel_type: "see also"
+          - "Missiemuseum Steyl":
+              link: "niveau3/Dutch/MissiemuseumSteyl.yml"
+              rel_type: "see also"
+          - "Museon-Omniversum":
+              link: "niveau3/Dutch/Museon.yml"
+              rel_type: "see also"
+          - "Museum Bronbeek":
+              link: "niveau3/Dutch/Bronbeek.yml"
+              rel_type: "see also"
+          - "Museum Nusantara":
+              link: "niveau3/Dutch/MNusantara.yml"
+              rel_type: "see also"
+          - "Naturalis Biodiversity Center":
+              link: "niveau3/Dutch/Naturalis.yml"
+              rel_type: "see also"
+          - "Natuurhistorisch en Volkenkundig Museum Oudenbosch":
+              link: "niveau3/Dutch/MOudenbosch.yml"
+              rel_type: "see also"
+          - "Rijksmuseum Amsterdam":
+              link: "niveau3/Dutch/RijksmuseumAmsterdam.yml"
+              rel_type: "see also"
+          - "Rijksmuseum van Oudheden":
+              link: "niveau3/Dutch/RMO.yml"
+              rel_type: "see also"
+          - "Volkenkundig Museum 'Gerardus van der Leeuw'":
+              link: "niveau3/Dutch/GerardusLeeuw.yml"
+              rel_type: "see also"
+          - "Volkenkundig Museum Justinus van Nassau":
+              link: "niveau3/Dutch/JustinusNassau.yml"
+              rel_type: "see also"
+          - "Wereldmuseum Amsterdam":
+              link: "niveau3/Dutch/WMAmsterdam.yml"
+              rel_type: "see also"
+          - "Wereldmuseum Berg en Dal":
+              link: "niveau3/Dutch/WMBergEnDal.yml"
+              rel_type: "see also"
+          - "Wereldmuseum Leiden":
+              link: "niveau3/Dutch/WMLeiden.yml"
+              rel_type: "see also"
+          - "Wereldmuseum Rotterdam":
+              link: "niveau3/Dutch/WMRotterdam.yml"
+              rel_type: "see also"
+    - "Ambtenaren in gekoloniseerde gebieden":
+        link: "niveau2/Dutch/Ambtenaren.yml"
+        rel_type: "see also"
+        Deelonderwerpen:
+          - "C.G.C. Reinwardt":
+              link: "niveau3/Dutch/Reinwardt.yml"
+              rel_type: "see also"    
+          - "Museum Nusantara":
+              link: "niveau3/Dutch/MNusantara.yml"
+              rel_type: "see also"
+    - "De handel in objecten uit een koloniale context":
+        link: "niveau2/Dutch/Handel.yml"
+        rel_type: "see also"
+        Deelonderwerpen:
+          - "Groote Koninklijke Bazar":
+              link: "niveau3/Dutch/KoninklijkeBazar.yml"
+              rel_type: "see also"
+          - "Internationale Koloniale en Uitvoerhandel Tentoonstelling":
+              link: "niveau3/Dutch/Wereldtentoonstelling1883.yml"   
+              rel_type: "see also"       
+          - "Koninklijke Vereniging Vrienden der Aziatische Kunst":
+              link: "niveau3/Dutch/KVVAK.yml"
+              rel_type: "see also"
+          - "Kunsthandel Van Lier":
+              link: "niveau3/Dutch/KunsthandelVanLier.yml"
+              rel_type: "see also"
+    - "Leger- en marinepersoneel in gekoloniseerde gebieden":
+        link: "niveau2/Dutch/LegerEnMarine.yml"
+        rel_type: "see also"
+        Deelonderwerpen:
+          - "Hoofdcursus Kampen":
+              link: "niveau3/Dutch/HoofdcursusKampen.yml"
+              rel_type: "see also"
+          - "Museum Bronbeek":
+              link: "niveau3/Dutch/Bronbeek.yml"
+              rel_type: "see also"
+          - "Volkenkundig Museum Justinus van Nassau":
+              link: "niveau3/Dutch/JustinusNassau.yml"
+              rel_type: "see also"
+    - "Wetenschappelijk onderzoek in gekoloniseerde gebieden":
+        link: "niveau2/Dutch/Science.yml"
+        rel_type: "see also"
+        Deelonderwerpen:
+          - "Koninklijk Instituut voor Taal- Land- en Volkenkunde":
+              link: "niveau3/Dutch/KITLV.yml"
+              rel_type: "see also"
+          - "Naturalis Biodiversity Center":
+              link: "niveau3/Dutch/Naturalis.yml"
+              rel_type: "see also"
+          - "Volkenkundig Museum 'Gerardus van der Leeuw'":
+              link: "niveau3/Dutch/GerardusLeeuw.yml"
+              rel_type: "see also"
+          - "Wageningen University & Research":
+              link: "niveau3/Dutch/WageningenUniversity.yml"
+              rel_type: "see also"
+    - "Zendelingen en missionarissen in gekoloniseerde gebieden":
+        link: "niveau2/Dutch/ZendingEnMissie.yml"
+        rel_type: "see also"
+        Deelonderwerpen:
+          - "Missiemuseum Steyl":
+              link: "niveau3/Dutch/MissiemuseumSteyl.yml"
+              rel_type: "see also"
+          - "Natuurhistorisch en Volkenkundig Museum Oudenbosch":
+              link: "niveau3/Dutch/MOudenbosch.yml"
+              rel_type: "see also"
+          - "Nederlandsch Zendeling Genootschap": 
+              link: "niveau3/Dutch/NZG.yml"
+              rel_type: "see also"
+          - "Wereldmuseum Berg en Dal":
+              link: "niveau3/Dutch/WMBergEnDal.yml"
+              rel_type: "see also"
+  "Locaties":   
+    - "Aruba, Bonaire en Curaçao":
+        link: "niveau2/Dutch/ArubaBonaireCuracao.yml"
+        rel_type: "see also"
+    - "Saba, Sint Eustatius en Sint Maarten":
+        link: "niveau2/Dutch/SabaStEustatiusStMaarten.yml"
+        rel_type: "see also"        
+    - "Ghana":
+        link: "niveau2/Dutch/SabaStEustatiusStMaarten.yml"
+        rel_type: "see also"  
+
+editing_metadata:
+  - date: 2024-06-06
+    applies_to: 
+    author: wiebe reints
+    role: original_author
+    editing_notes: metadata added on 2025-06-02. from now, major changes to the file need to be logged here.        

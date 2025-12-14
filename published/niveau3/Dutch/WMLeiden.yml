@@ -1,0 +1,169 @@
+Level: 3
+
+Title: "Wereldmuseum Leiden"
+
+Abstract: "Het huidige Wereldmuseum Leiden is in de 19e eeuw ontstaan door het samenvoegen van verschillende in gekoloniseerde gebieden verzamelde collecties." 
+
+RelatedAides: 
+  - "Bronnen":
+        link: "niveau1/Dutch/Bronnen.yml"
+        rel_type: "see also"
+  - "De handel in objecten uit een koloniale context":
+        link: "niveau2/Dutch/Handel.yml"
+        rel_type: "see also"
+  - "Leger- en marinepersoneel in gekoloniseerde gebieden":
+        link: "niveau2/Dutch/LegerEnMarine.yml"
+        rel_type: "see also"
+  - "Ambtenaren in gekoloniseerde gebieden":
+        link: "niveau2/Dutch/Ambtenaren.yml"
+        rel_type: "see also"
+  - "Koninklijk Kabinet van Zeldzaamheden":
+        link: "niveau3/Dutch/KKZ.yml"
+        rel_type: "see also"
+  - "Groote Koninklijke Bazar":
+        link: "niveau3/Dutch/KoninklijkeBazar.yml"
+        rel_type: "see also"
+  - "Kunsthandel Van Lier":
+        link: "niveau3/Dutch/KunsthandelVanLier.yml"
+        rel_type: "see also"
+  - "Etnografisch Museum Artis":
+        link: "niveau3/Dutch/EMArtis.yml"
+        rel_type: "see also"
+  - "Koninklijk Bataviaasch Genootschap van Wetenschappen en Kunsten":
+        link: "niveau3/Dutch/BGKW.yml"
+        rel_type: "see also"
+  - "Naturalis Biodiversity Center":
+        link: "niveau3/Dutch/Naturalis.yml"
+        rel_type: "see also"
+  - "Wereldmuseum Amsterdam":
+        link: "niveau3/Dutch/WMAmsterdam.yml"
+        rel_type: "See also"
+  - "Wereldmuseum Rotterdam":
+        link: "niveau3/Dutch/WMRotterdam.yml"
+        rel_type: "see also"
+  - "Wereldmuseum Berg en Dal":
+        link: "niveau3/Dutch/WMBergEnDal.yml"
+        rel_type: "see also"
+  - "Koninklijk Instituut voor Taal-, Land- en Volkenkunde":
+        link: "niveau3/Dutch/KITLV.yml"
+        rel_type: "see also"
+  - "Rijksmuseum Amsterdam":
+        link: "niveau3/Dutch/RijksmuseumAmsterdam.yml"
+        rel_type: "see also"
+  - "Rijksmuseum van Oudheden":
+        link: "niveau3/Dutch/RMO.yml"
+        rel_type: "see also"
+  - "C.G.C. Reinwardt":
+        link: "niveau3/Dutch/Reinwardt.yml"
+        rel_type: "see also"
+  - "Museum Nusantara":
+        link: "niveau3/Dutch/MNusantara.yml"
+        rel_type: "see also"
+  - "Volkenkundig Museum Justinus van Nassau":
+        link: "niveau3/Dutch/JustinusNassau.yml"
+        rel_type: "see also"
+  - "Internationale Koloniale en Uitvoerhandel Tentoonstelling":
+        link: "niveau3/Dutch/Wereldtentoonstelling1883.yml"
+        rel_type: "see also"
+  - "Natuurhistorisch en Volkenkundig Museum Oudenbosch":
+      link: "niveau3/Dutch/MOudenbosch.yml"
+      rel_type: "see also"
+
+Relevant data:
+  Identifiers:
+    - "https://www.wikidata.org/entity/Q17339437"
+  Name variations:
+    - "Verzameling Von Siebold"
+    - "Rijks Japansch Museum"
+    - "Rijks Japansch Museum Von Siebold"
+    - "Rijks Etnografisch Museum"
+    - "Rijksmuseum voor Volkenkunde"
+    - "Museum Volkenkunde"
+    - "Nationaal Museum van Wereldculturen"
+  Tags:
+    Activity:
+      - "[Etnografisch museum](http://vocab.getty.edu/aat/300451067)"    
+      - "[Collectie](http://vocab.getty.edu/aat/300025976)"
+    Type of objects:
+      - "[Etnografica](http://vocab.getty.edu/aat/300234108)"
+    Geographical:
+      - "[Afrika](https://sws.geonames.org/6255146/)"
+      - "[Azië](https://sws.geonames.org/6255147/)"
+      - "[Noord-Amerika](https://sws.geonames.org/6255149/)"
+      - "[Oceanië](https://sws.geonames.org/6255151/)"
+      - "[Zuid-Amerika](https://sws.geonames.org/6255150/)"
+  Period of activity:
+    Year of start: "1837"
+    Year of end: []
+  Collections:
+    Within Data Hub: []
+
+Main-text:
+  content: |
+    ### Geschiedenis van het museum
+    
+    Het huidige Wereldmuseum Leiden kent een geschiedenis vanaf 1837 waarbij de eerste honderd jaar gekenmerkt wordt door financiële moeilijkheden, de verwerving van grote hoeveelheden objecten en vele wisselingen van locatie. In 1937 vond het museum uiteindelijk in het voormalig academisch ziekenhuis aan de Steenstraat een locatie waar het zijn volledige collectie tentoon kan stellen. Nog altijd is het museum in dit pand gevestigd. 
+    
+    De collectie van het Wereldmuseum Leiden is in 1837 ontstaan uit de privéverzameling van [Philipp Franz von Siebold](http://www.wikidata.org/entity/Q77140), tevens de eerste directeur van het museum, dat de naam 's Rijks Japansch Museum Von Siebold droeg. Vanaf 1864 heette het museum het 's Rijks Etnografisch Museum, REM. De collectie, die aanvankelijk vooral uit Japanse objecten bestond, werd gedurende de 19e eeuw uitgebreid met verschillende particuliere verzamelingen. In 1883 kwam daar een aanzienlijke collectie etnografische objecten uit de collectie van het [Koninklijk Kabinet van Zeldzaamheden](https://app.colonialcollections.nl/nl/research-aids/https%3A%2F%2Fn2t%252Enet%2Fark%3A%2F27023%2Fcc7609accb9857dc8ca777ff1d6d4af1) bij. In 1904 werd ook een gedeelte van de collectie van het [Rijksmuseum voor Oudheden](https://app.colonialcollections.nl/nl/research-aids/https%3A%2F%2Fn2t%252Enet%2Fark%3A%2F27023%2F732277d365ab6fbcc351da7bc2b900b3) in Leiden overgedragen aan het toenmalige Rijks Etnografisch Museum. Onder deze laatste groep objecten bevonden zich ook de verschillende Singhasari-beelden, waarvan een deel in 1978 en een ander deel in 2023 zijn gerestitueerd aan Indonesië. Ook werden objecten aan andere musea overgedragen, zoals aan het Anatomisch Museum in Leiden in 1935. 
+    
+    Objecten werden op verschillende manieren verkregen. Allereerst, zoals hierboven beschreven, door het uitruilen met andere musea. Daarnaast was het Rijks Etnografisch Museum zelf een actieve koper van etnografische objecten bij handelaren en veilingen, een deel van de collectie Benin Bronzen van het museum is bijvoorbeeld op deze manier verkregen. Ook werden veel objecten ontvangen als donatie, vaak van [koloniale ambtenaren](https://app.colonialcollections.nl/nl/research-aids/https%3A%2F%2Fn2t%252Enet%2Fark%3A%2F27023%2F4f29663e147ee9c1ee7a9eb3019fca18) of [militairen](https://app.colonialcollections.nl/nl/research-aids/https%3A%2F%2Fn2t%252Enet%2Fark%3A%2F27023%2F0ceff3da7d6bba371bb16767a65b619e) van bijvoorbeeld het Koninklijk Nederlands-Indisch Leger (KNIL). Het overgrote deel van de collectie van het huidige Wereldmuseum Leiden is dan ook gedurende de 19e en 20e eeuw verzameld.
+
+    ![Foto van het Wereldmuseum in Leiden in november 2024](https://upload.wikimedia.org/wikipedia/commons/5/51/Wereldmuseum_Leiden_%28nov_2024%29.jpg)
+    _Het Wereldmuseum Leiden in november 2024_ ([Sneeuwvlakte / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wereldmuseum_Leiden_(nov_2024).jpg#))
+    
+    ### Herkomstonderzoek
+    
+    Binnen de collectie van het Wereldmuseum zijn objecten uit het Wereldmuseum Leiden te herkennen aan het kenmerk 'RV-'. Onder 'RV-360' staan objecten geregistreerd die in 1883 vanuit het [Koninklijk Kabinet van Zeldzaamheden](https://app.colonialcollections.nl/nl/research-aids/https%3A%2F%2Fn2t%252Enet%2Fark%3A%2F27023%2Fcc7609accb9857dc8ca777ff1d6d4af1) zijn binnengekomen. 'RV-1403' duidt op een aanzienlijke collectie objecten die in 1904 door het [Rijksmuseum voor Oudheden](https://app.colonialcollections.nl/nl/research-aids/https%3A%2F%2Fn2t%252Enet%2Fark%3A%2F27023%2F732277d365ab6fbcc351da7bc2b900b3) zijn overgedaan. In het Wereldmuseum Leiden zijn sinds de oprichting gegevens bijgehouden over de collectie. Het archiefsysteem is echter meerdere keren veranderd en voor elk object of collectieserie (meerdere stukken die tegelijk zijn geregistreerd) is verschillende documentatie beschikbaar. 
+    
+    De archieven kunnen ruwweg worden verdeeld in het collectiearchief en het correspondentiearchief. Het collectiearchief bestaat uit objectregisters, inventarissen, seriedossiers en voor sommige oudere objecten lijsten van schenkingen en uitwisselingen. Dit archief is terug te vinden onder NL-LdnRMV_A3. Het correspondentiearchief bevat inkomende brieven en telegrammen, kopieën van uitgaande brieven, lijsten van inkomende en uitgaande correspondentie, enzovoort. Dit archief is terug te vinden onder NL-LdnRMV_A1.
+    
+    Het archief van het Wereldmuseum Leiden is niet online toegankelijk. Voor meer informatie over de collectie of om archiefstukken in te zien kan er contact worden opgenomen met [collectieinfo@wereldmuseum.nl](mailto:collectieinfo@wereldmuseum.nl). 
+    
+    Bij het Nationaal Archief zijn ook documenten te vinden met betrekking tot het Wereldmuseum Leiden, hierbij gaat het voornamelijk om ambtelijke stukken. In de archieven van musea waarmee het Wereldmuseum Leiden collecties heeft uitgewisseld kan eventueel meer archiefmateriaal worden gevonden met betrekking tot die specifieke objecten.
+  content-type: text/markdown
+
+Sources:
+  Secondary sources:
+    - Type of source: "Boek"
+      Name: "Effert, Rudolf Antonius Hermanus Dominique. Volkenkundig verzamelen: het Koninklijk Kabinet van Zeldzaamheden en het Rijks Ethnografisch Museum : 1816-1883, 2003."
+      Link: 
+        - URL: "https://search.worldcat.org/title/317117313?oclcNum=317117313"
+        - OCLC: "317117313"
+      Description and remarks: "Dissertatie van Rudolf Effert, gelijk aan Engelstalige variant. Over de geschiedenis van het Rijks Etnografisch Museum en hoe dat is gevormd uit de collecties van het KKZ."
+    - Type of source: "Boek"
+      Name: "Marquart, Joseph. Die Benin-Sammlung des Reichsmuseums für Völkerkunde in Leiden. Leiden: Brill, 1913."
+      Link: 
+        - URL: "https://search.worldcat.org/title/562473153?oclcNum=562473153"
+        - OCLC: "562473153"
+      Description and remarks: "Boek van Joseph Marquart, een Duits historicus en conservator van het Rijks Etnografisch Museum in Leiden, over de Benin collectie aldaar."
+    - Type of source: "Boek"
+      Name: "Rassers, Willem H. Overzicht van de geschiedenis van het Rijksmuseum voor Volkenkunde, 1837-1937. Sijthoff, 1937."
+      Link: 
+        - URL: "https://resolver.kb.nl/resolve?urn=MMKB06:000003234:00005"
+      Description and remarks: "Uitvoerige geschiedenis van de eerste honderd jaar van het Rijks Etnografisch Museum. Beschrijft hoe het museum is ontstaan uit de collectie van Von Siebold en het KKZ en hoe dit naderhand tot etnografisch museum is gevormd. Bevat informatie over verzamelde collecties gedurende de eerste honderd jaar."
+    - Type of source: "Tijdschrift"
+      Name: "Veys, Fanny Wonu, en Nationaal Museum van Wereldculturen, red. The Benin Collections at the National Museum of World Cultures. Provenance, #2. Leiden: Nationaal Museum van Wereldculturen, 2021."
+      Link:
+        - URL: "https://search.worldcat.org/title/1293851263"
+        - ISBN: "9789088909986"
+        - OCLC: "1293851263"
+      Description and remarks: "Publicatie van het Wereldmuseum met betrekking tot de Benin collectie. Verschaft informatie over de link tussen objecten uit Benin binnen de collectie van het Wereldmuseum (niet alleen in Leiden) en de plundering van Britse soldaten in 1897."
+    - Type of source: "Boek"
+      Name: "Wengen, Ger van. Wat is er te doen in Volkenkunde?: de bewogen geschiedenis van het Rijksmuseum voor Volkenkunde in Leiden, Leiden 2002."
+      Link:
+        - URL: "https://search.worldcat.org/title/901467113"
+        - ISBN: "9789071310812"
+        - OCLC: "901467113"
+      Description and remarks: "Boek over de geschiedenis van het huidige Wereldmuseum in Leiden."
+
+editing_metadata:
+  - date: 2024-03-27
+    applies_to: 
+    author: Wiebe Reints
+    role: original_author
+    editing_notes: metadata added on 2025-06-02. from now, mayor changes to the file need to be logged here. 
+  - date: 2025-06-19
+    applies_to: 
+    author: Tom Quist
+    role: editor
+    editing_notes: RA has been checked by Tom Quist (Provenance Researcher at Wereldmuseum), no comments.
