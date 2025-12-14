@@ -16,15 +16,15 @@ var textFile = null,
 
 
 
-async function uploadToGithub(text) {
+async function uploadToGithub(auth_token, text) {
 
     var octokitModule = await import("https://esm.sh/@octokit/core");
-    // this is the 
-    var octokit = new octokitModule.Octokit({auth: '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'});
-    var response = await octokit.request('PUT /repos/valevo/form-auto-commit-test/contents/test3.yaml', {
+    // this is the "form-auto-commit_token" PAT (classic)
+    var octokit = new octokitModule.Octokit({auth: auth_token});
+    var response = await octokit.request('PUT /repos/valevo/form-auto-commit-test/contents/test5.yaml', {
                               owner: 'valevo',
                               repo: 'form-auto-commit-test',
-                              path: 'test3.yaml',
+                              path: 'test5.yaml',
                               message: 'first commit by Octokit',
                               committer: {
                                 name: 'vale',
@@ -38,30 +38,6 @@ async function uploadToGithub(text) {
     return response;
 }
 
-// async function uploadToGithub(text) {
-
-//     var x = async import("https://esm.sh/@octokit/core").then((octokitModule) => {
-//         // import Octokit from octokitModule;
-//         const octokit = new octokitModule.Octokit({auth: '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'});
-//         alert(octokit);
-// https://github.com/
-//         await octokit.request('PUT /repos/valevo/form-auto-commit-test/contents/test.yaml', {
-//                               owner: 'valevo',
-//                               repo: 'form-auto-commit-test',
-//                               path: 'test.yaml',
-//                               message: 'first commit by Octokit',
-//                               committer: {
-//                                 name: 'vale',
-//                                 email: 'valevogelmann@gmail.com'
-//                               },
-//                               content: text,
-//                               headers: {
-//                                 'X-GitHub-Api-Version': '2022-11-28'
-//                               }
-//                             });
-//     });
-    
-// }
 
 
 /////////////////////////////////////////////////////////
@@ -97,14 +73,14 @@ async function submitForm() {
     // alert(assembleRA(lang, level, title));
 
     // alert(yamlBlob);
-    var githubResponse = await uploadToGithub(yamlStr);
-    console.log(githubResponse);
+    let token = prompt("Please enter the GitHub Personal-Access Token (classic):", "");
+    if (token == null || token == "") {
+        return yamlBlob;
+    } else {
+        var githubResponse = await uploadToGithub(token, yamlStr);
+        console.log(githubResponse);
+    }
 }
-
-
-
-
-
 
 
 // var create = document.getElementById('create'),
