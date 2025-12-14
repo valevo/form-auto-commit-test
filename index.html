@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Research Aid Form</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+<!--     <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <style>
+        totalresultscount { display:None;}
+        geonames geoname toponymname {display: block;}
+        toponymname {font-weight: bold;}
+        
+    </style>
+    <!-- <script type="module">
+          import { Octokit } from "https://esm.sh/@octokit/core";
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+  </head>
+  <body>
+    <main>
+        <div>
+        <h1>Research Aid Form</h1>
+        <form id="basic-info">
+            <label for="language">Language: </label>
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+            </select>
+            <br><br>
+            <label for="level">Level: </label>
+            <select name="level" id="level" onchange="displayLevelForm()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <br><br>
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title" onkeyup="checkTitle()" value="PREFILLED">
+            <small id="title-warn" style="color:red;padding:1em;"></small>
+        </form>
+        </div>
+        <br><br><br>
+        <div>
+            <input type="button" id="submit" name="submit" value="create YAML" onclick="submitForm()">
+        </div>
+
+    </main>
+  </body>
+</html>
+
+
