@@ -1,4 +1,88 @@
-function getBlob (text) {
+/////////////////////////////////////////////////////////
+//// HELPERS
+/////////////////////////////////////////////////////////
+
+
+function getGitHubPat() {
+
+    var token = document.getElementById("gh-pat").value;
+
+    if (token == null || token == "") {
+        alert("Please put a GitHub Personal-Access token in the field at the top first!");
+        throw "No Github PAT!"
+    }
+    return token;
+}
+
+
+/////////////////////////////////////////////////////////
+//// BASIC FUNCTIONS
+/////////////////////////////////////////////////////////
+
+async function loadPage() {
+    let token = prompt("Please enter the GitHub Personal-Access Token (classic):", "");
+    if (!(token == null || token == "")) {
+        document.getElementById("gh-pat").value = token;
+    } 
+    getTitles();
+}
+
+
+/////////////////////////////////////////////////////////
+//// FETCHING DATA
+/////////////////////////////////////////////////////////
+
+async function listRAs(level, language){
+
+    var octokitModule = await import("https://esm.sh/@octokit/core");
+
+    var octokit = new octokitModule.Octokit({auth: getGitHubPat()})
+
+    var langEN = (language == 'English') ? 'English' : 'Dutch'; 
+    var path = `published/niveau${level}/${langEN}/`
+    var folderContents = await octokit.request('GET /repos/valevo/form-auto-commit-test/contents/'+path, {
+  owner: 'OWNER',
+  repo: 'form-auto-commit-test',
+  path: path,
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+});
+    console.log(folderContents);
+    return folderContents;
+}
+
+
+async function getTitles() {
+    var lang = document.getElementById("language").value;
+    var level = document.getElementById("level").value;
+    // var title = document.getElementById("title").value;
+
+    var result = await listRAs(level, lang);
+
+    if (result) {
+        var options = document.getElementById('matching-RAs');
+        options.innerHTML = '';
+        for (const file of result.data) {
+            console.log(file.name);
+            // if (file.name.includes(title)) {
+            var option = document.createElement('option');
+            option.value = file.name;
+            options.appendChild(option);
+        }
+    }
+}
+
+
+async function getRAData() {
+    
+}
+
+/////////////////////////////////////////////////////////
+//// UPLOADING
+/////////////////////////////////////////////////////////
+
+function getBlob(text) {
     var data = new Blob([text], {type: 'text/plain'});
 
     // If we are replacing a previously generated file we need to
@@ -11,19 +95,18 @@ function getBlob (text) {
 
     // returns a URL you can use as a href
     return textFile;
-  };
+};
 
 
-
-async function uploadToGithub(auth_token, text) {
+async function uploadToGithub(text) {
 
     var octokitModule = await import("https://esm.sh/@octokit/core");
     // this is the "form-auto-commit_token" PAT (classic)
-    var octokit = new octokitModule.Octokit({auth: auth_token});
-    var response = await octokit.request('PUT /repos/valevo/form-auto-commit-test/contents/test1.yaml', {
+    var octokit = new octokitModule.Octokit({auth: getGitHubPat()});
+    var response = await octokit.request('PUT /repos/valevo/form-auto-commit-test/contents/test4.yaml', {
                               owner: 'valevo',
                               repo: 'form-auto-commit-test',
-                              path: 'test1.yaml',
+                              path: 'test4.yaml',
                               message: 'first commit by Octokit',
                               committer: {
                                 name: 'vale',
@@ -37,28 +120,6 @@ async function uploadToGithub(auth_token, text) {
     return response;
 }
 
-
-
-async function listRAs(level, language, text=''){
-
-    var octokitModule = await import("https://esm.sh/@octokit/core");
-
-    var octokit = new octokitModule.Octokit({auth: token})
-
-    var folderContents = await octokit.request('GET /repos//valevo/form-auto-commit-test/contents/{path}', {
-  owner: 'OWNER',
-  repo: 'REPO',
-  path: 'PATH',
-  headers: {
-    'X-GitHub-Api-Version': '2022-11-28'
-  }
-})
-
-
-
-/////////////////////////////////////////////////////////
-
-
 function assembleRA(lang, level, title) {
     return `Language: ${lang}
 
@@ -70,6 +131,8 @@ Title: ${title}`;
 
 async function submitForm() {
     var lang = document.getElementById("language").value;
+    var langEN = (language == 'English') ? 'English' : 'Dutch'; 
+
     var level = document.getElementById("level").value;
     var title = document.getElementById("title").value;
 
@@ -85,15 +148,16 @@ async function submitForm() {
     // };
     // const yamlString = yaml.dump(jsObject);
     // console.log(yamlString);
-    
-    // alert(assembleRA(lang, level, title));
-
-    // alert(yamlBlob);
-    let token = prompt("Please enter the GitHub Personal-Access Token (classic):", "");
-    if (token == null || token == "") {
-        return yamlBlob;
-    } else {
-        var githubResponse = await uploadToGithub(token, yamlStr);
+    var statusMessage = document.getElementById("upload-status");
+    try {
+        var githubResponse = await uploadToGithub(yamlStr);
         console.log(githubResponse);
+        var a = githubResponse.data.content.html_url;
+        statusMessage.innerHTML = `Successfully created <a href="${a}">${a}</a>`;
+        statusMessage.style.color = "green";
+    } catch {
+        statusMessage.innerHTML = `Error creating 'niveau${level}/${langEN}/${title}'!`;
+        statusMessage.style.color = "red";
     }
+    
 }
