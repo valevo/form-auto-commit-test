@@ -1,0 +1,38 @@
+#main-container {
+  display: flex;
+}
+
+#main-container > * {
+    /* background-color: blue; */
+    padding: 2%;
+    width: 50%;
+}
+
+#form-container {
+    background-color: rgba(204, 204, 255, 0.6);
+    width: 60%;
+    
+}
+
+
+#info-container {
+    background-color: rgba(204, 204, 255, 0.2);
+    width: 40%;
+    /* resize: horizontal;
+    overflow: auto; */
+}
+
+
+textarea {
+    font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Segoe UI Emoji";
+    font-size: 50;
+    color: #5c5962;
+    line-height: 150%;
+}
+
+
+/* input[type="text"] {
+    background-color: red;
+    border-style: solid;
+    border-color: green;
+} */

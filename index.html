@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Research Aid Form</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./index.css">
 <!--     <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
     <style>
         totalresultscount { display:None;}
@@ -16,57 +16,73 @@
     <!-- <script type="module">
           import { Octokit } from "https://esm.sh/@octokit/core";
     </script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
     <script src="index.js"></script>
 
   </head>
   <body onload="loadPage()">
     <main>
-        <div>
+        <div id="main-container">
+        <div id="form-container">
 
-        <form>
-            <label for="gh-pat" style="color:red;padding:1em;">
-                Put your Github Personal-Access Token (classic) here (for security):<br> 
-            </label>
-            <input type="text" id="gh-pat" name="GitHub-PAT" value="">
-        </form>
+            <form>
+                <label for="gh-pat" style="color:red;padding:1em;">
+                    Put your Github Personal-Access Token (classic) here (for security):<br> 
+                </label>
+                <input type="text" id="gh-pat" name="GitHub-PAT" value="">
+            </form>
+                
+            <h1>Research Aid Form</h1>
+
+            <form id="basic-info">
+                <label for="language">Language: </label>
+                <select name="language" id="language" onchange="getTitles()">
+                    <option value="English">English</option>
+                    <option value="Dutch">Nederlands</option>
+                </select>
+                <br><br>
+                <label for="level">Level: </label>
+                <select name="level" id="level" onchange="getTitles(); displayLevelForm()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <br><br>
+                <label for="title">Title: </label>
+                <!-- <input type="text" id="title" name="title" onkeyup="checkTitle()" value="PREFILLED"> -->
+                <input list="matching-RAs" type="text" id="title" name="title" value="">
+                <datalist id="matching-RAs">
+                </datalist>
+
+                <input type="button" id="auto-fill" name="auto-fill" value="auto fill" onclick="autoFill()">
+                <div id="auto-fill-container">
+                    
+                </div>
+
+                <!-- <input type="button" id="check-title" name="check-title" value="check title" onclick="checkTitle()"> -->
+    
+                <!-- <small id="title-warn" style="color:red;padding:1em;"></small> -->
+            </form>
+        
+            <br><br><br>
+            <div id="button-container">
+                <input type="button" id="submit" name="submit" value="create YAML" onclick="submitForm()">
+                <p id="upload-status"></p>
+            </div>
+            <div id="test">
+                <textarea class="text-input">test test test
+                </textarea>
+            </div>
+
+        </div>
+
+        <div id="info-container">
             
-        <h1>Research Aid Form</h1>
-
-        <form id="basic-info">
-            <label for="language">Language: </label>
-            <select name="language" id="language" onchange="getTitles()">
-                <option value="en">English</option>
-                <option value="nl">Nederlands</option>
-            </select>
-            <br><br>
-            <label for="level">Level: </label>
-            <select name="level" id="level" onchange="getTitles(); displayLevelForm()">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <br><br>
-            <label for="title">Title: </label>
-            <!-- <input type="text" id="title" name="title" onkeyup="checkTitle()" value="PREFILLED"> -->
-            <input list="matching-RAs" type="text" id="title" name="title" value="">
-            <datalist id="matching-RAs">
-                <!-- <option value="Poland"> -->
-            </datalist>
-
-            <input type="button" id="auto-fill" name="auto-fill" value="auto fill" onclick="getRAData()">
-
-            <!-- <input type="button" id="check-title" name="check-title" value="check title" onclick="checkTitle()"> -->
-
-            <!-- <small id="title-warn" style="color:red;padding:1em;"></small> -->
-        </form>
+            
         </div>
-        <br><br><br>
-        <div id="button-container">
-            <input type="button" id="submit" name="submit" value="create YAML" onclick="submitForm()">
-            <p id="upload-status"></p>
         </div>
-
     </main>
   </body>
 </html>
